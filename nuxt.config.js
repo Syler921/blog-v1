@@ -12,7 +12,15 @@ export default {
       { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      //C:\Users\stsankov\Desktop\_WORK\UPDATES\UPDATE V118\nuxt\hello\hello3\node_modules\bootstrap\dist\css\bootstrap.min.css     C:\Users\stsankov\Desktop\_WORK\UPDATES\UPDATE V118\nuxt\hello\hello3\node_modules\bootstrap\dist\js\bootstrap.min.js
+      { rel: "stylesheet", type: "text/css", href: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' }
+    ],
+
+    script: [
+      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
+      // { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
+      // { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
     ]
   },
   /*
