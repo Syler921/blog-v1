@@ -1,4 +1,6 @@
 
+import webpack from 'webpack'
+
 export default {
   mode: 'spa',
   /*
@@ -18,7 +20,12 @@ export default {
     ],
 
     script: [
+      {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+        type: "text/javascript"
+      },
       { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
+
       // { src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' },
       // { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js' }
     ]
@@ -35,7 +42,9 @@ export default {
   /*
   ** Plugins to load before mounting the App
   */
+
   plugins: [
+
   ],
   /*
   ** Nuxt.js dev-modules
@@ -56,5 +65,8 @@ export default {
     */
     extend (config, ctx) {
     }
-  }
+  },
+  router: {
+    base: '/blog'
+  },
 }

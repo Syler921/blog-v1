@@ -3,6 +3,9 @@
     <div class="container">
         <div class="row">
 
+        </div>
+        <div class="row">
+
             <div class="col-sm-6 col-md-4 col-lg-3 mt-4">
                <div class="card card-blog">
                 <div class="card-image">
@@ -141,7 +144,12 @@
 </template>
 
 <script>
+
+
 import Logo from '~/components/Logo.vue'
+import {$,jQuery} from 'jquery';
+
+
 
 export default {
   components: {
